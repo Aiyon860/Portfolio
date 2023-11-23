@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1540px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 10px black;
+}
+
+.header-inner {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1540px;
+    padding: 0.5rem 5rem;
+    position: relative;
+}
+
+.header-inner img {
+    width: 12rem;
+}
+
+.header-inner nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-inner nav ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.header-inner nav ul li a {
+    border-radius: 1000px;
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+}
+
+.header-inner nav ul li a:hover {
+    background-color: rgb(53, 126, 117);
+    color: white;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.header-inner .hamburger-button {
+    display: none;
+    position: absolute;
+    padding: 10px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: rgb(173, 173, 173); 
+}
+
+.progress-container .progress-bar {
+    height: 6px;
+    background: rgb(33, 182, 162);
+    width: 0%;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 1540px;
+    width: 100%;
+}
+
+hr {
+    width: 70%;
+    margin-inline: auto;
+}
+
+main #content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1540px;
+}
+
+main #content article.introduction {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-block: 7rem 7.5rem;
+    align-items: center;
+    position: relative;
+}
+
+main #content article.introduction .description {
+    padding-left: 3.5rem;
+}
+
+main #content .introduction .description .title {
+    font-size: 3.4rem;
+    padding-bottom: 1rem;
+}
+
+main #content .introduction .description .title .daniel {
+    color: rgb(33, 182, 162);
+}
+
+main #content .introduction .description p {
+    font-size: 1.15rem;
+}
+
+main #content .introduction .profile-picture img {
+    min-width: 250px;
+    width: 450px;
+}
+
+@keyframes scale-home {
+    100% {
+        transform: scale(1.5);
+        opacity: 100%;
+        color: black;
+        background-color: rgb(110, 220, 183);;
+    }
+}
+
+main #content .introduction .button-to-below {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+main #content .button-to-below a {
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 200px;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    opacity: 75%;
+    transition: all .3s ease-in-out;
+    animation-name: scale-home;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+main #content article.identity {
+    background-color: rgb(0, 0, 0);
+    max-width: 1540px;
+    color: white;
+    padding-block: 6rem;
+}
+
+main #content article.identity .container {
+    width: 65%;
+    margin-inline: auto;
+    display: flex;
+    gap: 4.5rem;
+}
+
+main #content .identity .container .about-me, main #content .identity .container .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main #content .identity .container .about-me {
+    flex: 3;
+}
+
+main #content .identity .container section.about-me p {
+    font-size: 17px;
+}
+
+main #content .identity .container .contact-details {
+    flex: 1;
+}
+
+main #content .identity .container section.contact-details p {
+    font-size: 15px;
+}
+
+main #content .identity .container .about-me p, main #content .identity .container .contact-details p {
+    font-size: 13.5px;
+    color:rgb(173, 173, 173);
+}
+
+main #content .identity .container .contact-details p.address-phone span {
+    display: inline-block;
+    margin-bottom: 10px;
+} 
+
+main #content .identity .container .contact-details p.address-phone span.end {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+main #content .education {
+    width: 65%;
+    margin-inline: auto;
+    display: flex;
+    max-width: 1540px;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main #content .education h2 {
+    display: inline;
+    margin-inline: auto;
+    border-bottom: 3px solid rgb(33, 182, 162);
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+main #content .education section h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main #content .education section p.study-program {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:rgb(73, 73, 73);
+    margin-bottom: 20px;
+    font-size: 17.5px;
+}
+
+main #content .education section p span.bullet {
+    display: inline-block;
+    margin-inline: 5px;
+}
+
+main #content .education section p.description {
+    font-size: 15px;
+    color: rgb(83, 83, 83)
+}
+
+main #content .skill {
+    width: 65%;
+    margin-inline: auto;
+    display: flex;
+    max-width: 1540px;
+    flex-direction: column;
+}
+
+main #content .skill .skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main #content .skill h2 {
+    display: inline;
+    margin-inline: auto;
+    border-bottom: 3px solid rgb(33, 182, 162);
+    font-size: 30px;
+}
+
+main #content .skill .bars {
+    width: 75%;
+	margin-inline: auto;
+}
+
+main #content .skill .bars li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main #content .skill .bars li .bar {
+    margin-bottom: 20px;
+    background: #ccc;
+    width: 100%;
+    height: 42px;
+    border-radius: 3px;
+}
+
+.bar-expand {
+    width: 10%;
+    background: #313131;
+    height: 42px;
+    border-radius: 3px 0 0 3px;
+    color: whitesmoke;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #content .skill .bars li span {
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+main #content .skill .bars .list-skills {
+    margin-top: 36px;
+}
+
+main #content .skill .bars ul.list-skills {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+main #content .skill .bars ul.list-skills li img {
+    width: 12.5px;
+    margin-right: 7.5px;
+}
+
+main #content .skill .bars ul.skills li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 40%;
+}
+
+.javascript {
+    width: 20%;
+}
+
+.java {
+    width: 40%;
+}
+
+.c {
+    width: 40%;
+}
+
+.python {
+    width: 30%;
+}
+
+.go {
+    width: 25%;
+}
+
+.mysql {
+    width: 35%;
+}
+
+main #content .projects {
+    background-color: #0F172A;
+}
+
+main #content .projects h2 {
+    color: white;
+}
+
+main #content .projects .container {
+    width: 65%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1540px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+main #content .projects .container h2 {
+    display: inline;
+    margin-inline: auto;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(110, 220, 183);
+}
+
+main #content .projects .container section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main #content .projects .container section h3 {
+    color: rgb(235, 235, 235);
+}
+
+main #content .projects .container section p {
+    color: rgb(225, 225, 225);
+}
+
+main #content .projects .container section .description {
+    flex: 1.5;
+}
+
+main #content .projects .container section .description h3 {
+    margin-bottom: 15px;
+}
+
+main #content .projects .container section .video {
+    flex: 1.5;
+    background-color: none;
+}
+
+main #content .projects .container fieldset {
+    border: none;
+    appearance: 0;
+}
+
+main aside#quote-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+main aside#quote-contact .container-quote {
+    position: relative;
+}
+
+main aside#quote-contact .container-quote img {
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.175;
+    height: 312.5px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+main aside#quote-contact .quote-words {
+    padding-block: 6rem;
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    position: absolute;
+    top: 0;
+    right: 9%;
+}
+
+main aside#quote-contact .quote-words i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+main aside#quote-contact .quote-words i:first-of-type {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+main aside#quote-contact .quote-words i:last-of-type {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+main aside#quote-contact .quote-words blockquote {
+    flex: 3;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main aside#quote-contact .quote-words blockquote p:first-of-type {
+    font-weight: 700;
+}
+
+main aside#quote-contact .quote-words blockquote p:last-of-type {
+    font-size: 50%;
+    font-size: 500;
+}
+
+main aside#quote-contact .quote-words blockquote p span {
+    font-size: 60%;
+}
+
+main aside#quote-contact {
+    background-color: #191919;
+    color: white;
+}
+
+main aside#quote-contact .container-contact  {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 65%;
+    margin-inline: auto;
+    max-width: 1540px;
+    padding-block: 6rem;
+}
+
+main aside#quote-contact .container-contact .top {
+    display: flex;
+    gap: 3rem;
+}
+
+main aside#quote-contact .container-contact .top .envelope {
+    flex: 1;
+}
+
+main aside#quote-contact .container-contact .top .description {
+    flex: 4;
+}
+
+main aside#quote-contact .container-contact .top .description h2 {
+    margin-bottom: 15px;
+}
+
+main aside#quote-contact .container-contact .top .description p {
+    color:rgb(173, 173, 173);
+}
+
+main aside#quote-contact .container-contact .below {
+    display: flex;
+    gap: 5rem;
+}
+
+main aside#quote-contact .container-contact .below .label {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    flex: 1;
+    gap: 3.5rem;
+}
+
+main aside#quote-contact .container-contact .below .label .asterisk {
+    color: rgb(88, 249, 255);
+}
+
+main aside#quote-contact .container-contact .below .input {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 2rem;
+}
+
+main aside#quote-contact .container-contact .below .address-phone {
+    flex: 1;
+}
+
+.below input {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    padding: 12px;
+    font-family: 'Hind', sans-serif;
+    background-color: #373233;
+    border: 3px solid rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    transition: all .1s linear;
+    font-size: 14px;
+}
+
+.below input:focus {
+    outline: none;
+    border: 3px solid rgb(110, 220, 183);
+    transition: all .1s linear;
+}
+
+.below textarea#message {
+    height: 20rem;
+    resize: none;
+    padding: 12px;
+    font-family: 'Hind', sans-serif;
+    background-color: #373233;
+    border: 3px solid rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    transition: all .1s linear;
+    font-size: 14px;
+}
+
+.below textarea#message:focus {
+    border: 3px solid rgb(110, 220, 183);
+    transition: all .1s linear;
+    outline: none;
+}
+
+main aside#quote-contact .container-contact .below .address-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main aside#quote-contact .container-contact .below .address-phone p span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color:rgb(173, 173, 173);
+}
+
+main aside#quote-contact .container-contact .below .address-phone p span.end {
+    margin-bottom: 0;
+}
+
+.submit-button {
+    width: 30%;
+    height: 8%;
+    background-color: black;
+    border: none;
+    transition: all .1s linear;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: aquamarine;
+    transition: all .1s linear;
+    color: black;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1540px;
+    width: 100%;
+    padding-block: 2.75rem;
+    background-color: black;
+    position: relative;
+}
+
+footer .socials ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    justify-content: center;
+}
+
+footer .socials ul li {
+    list-style-type: none;
+    transition: all .3s ease-in-out;
+}
+
+footer .socials ul li:hover {
+    transform: scale(2);
+    transition: all .3s ease-in-out;
+}
+footer .socials li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(173, 173, 173);
+    transition: all .3s ease-in-out;
+}
+
+footer .socials li a:hover {
+    color: white;
+}
+
+footer p {
+    color: rgb(173, 173, 173);
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+footer .all-the-way-up {
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+}
+
+@keyframes scale-footer {
+    100% {
+        transform: scale(1.5);
+        opacity: 100%;
+        background-color: rgb(110, 220, 183);
+    }
+}
+
+footer .all-the-way-up a {
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 200px;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    opacity: 100%;
+    transition: all .3s ease-in-out;
+    animation-name: scale-footer;
+    animation-duration: 1.0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+footer .all-the-way-up a img {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,254 @@
+@media screen and (max-width: 1500px) {
+    main aside#quote-contact .container-quote .quote-words { right: 8.75%; }
+}
+
+@media screen and (max-width: 1280px) {
+    main #content .introduction .profile-picture img { width: 400px; }
+}
+
+@media screen and (max-width: 1025px) {
+    main #content article.introduction { padding-block: 5rem 6rem; }
+
+    main #content .introduction .description .title { font-size: 2.7rem; }
+
+    main #content .introduction .description p { font-size: 1rem; }
+
+    main #content .introduction .profile-picture img { width: 400px; }
+
+    main #content .identity .container section.about-me p, main #content .identity .container section.contact-details p { font-size: 1rem; }
+
+    main #content .projects .container { justify-content: center; }
+
+    main #content .projects .container section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main aside#quote-contact .container-quote .quote-words { right: 7.15%; }
+
+    main aside#quote-contact .container-contact .below { 
+        flex-wrap: wrap; 
+        gap: 0.35rem;
+    }
+
+    main aside#quote-contact .container-contact .below .address-phone { display: none; }
+
+    .below .submit-button { width: 30%; }
+}
+
+@media screen and (max-width: 769px) {
+    .header-inner { 
+        flex-direction: column;
+        gap: 0rem; 
+    }
+
+    .header-inner nav ul { display: none; } 
+    
+    .header-inner .hamburger-button {
+        display: block;
+        right: 2%;
+        bottom: -60%;
+        cursor: pointer;
+        background-color: rgba(110, 220, 183, 0.5);
+        z-index: -1000;
+    }
+
+    .header-inner .hamburger-button:hover, .header-inner .hamburger-button:active  { background-color: rgb(110, 220, 183); }
+
+    .header-inner .hamburger-button i:hover { color: black; }
+
+    .header-inner .hamburger-button i:active { color: black; }
+
+    main #content article.introduction {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    main #content article.introduction .description {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    main #content .introduction .profile-picture img { margin-bottom: 3rem; }
+
+    main #content article.identity .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main aside#quote-contact .container-quote .quote-words {
+        right: 6%;
+        top: -12%;
+    }
+
+    main aside#quote-contact .container-contact .below { gap: 1rem; }
+
+    main #content .projects .container section .video iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer .all-the-way-up { 
+        bottom: 125%;
+        right: 7.5%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    main #content article.introduction .description {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    main #content .introduction .profile-picture img {
+        width: 400px;
+        margin-bottom: 3rem;
+    }
+
+    main aside#quote-contact .container-quote .quote-words {
+        right: 7%;
+        top: -17.5%;
+    }
+
+    main aside#quote-contact .container-contact .top {
+        flex-direction: column;
+        text-align: center;
+    } 
+
+    main aside#quote-contact .container-contact .below { flex-wrap: nowrap; }
+
+    main aside#quote-contact .container-contact .below .label {
+        font-size: 12px;
+        gap: 4.1rem;
+    }
+
+    main aside#quote-contact .container-contact .below .input { width: 50%; }
+
+    .below textarea#message { height: 10rem; }
+
+    .below .submit-button {
+        width: 40%;
+        height: 10%;
+    }
+
+    .below .submit-button span { padding: 10px; }
+}
+
+@media screen and (max-width: 501px) {
+    main #content .introduction .profile-picture img { width: 350px; }
+
+    main #content .introduction .button-to-below { left: 41.5%; }
+    
+    main #content .education { text-align: center; }
+    
+    main #content .projects .container section .video iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    main aside#quote-contact .container-contact .below .input { width: 50%; }
+
+    main aside#quote-contact .container-quote .quote-words {
+        gap: 2rem;
+        right: 7%;
+        top: -20%;
+    }
+
+    main aside#quote-contact .container-contact .below .label { font-size: 11.25px; }
+
+    .below .submit-button { width: 100%; }
+
+    main aside#quote-contact .container-contact .below .label { gap: 4.2rem; }
+
+    footer .socials ul { column-gap: 3rem; }
+
+    footer .all-the-way-up { 
+        bottom: 120%;
+        left: 10% 
+    }
+
+    footer .all-the-way-up a {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .all-the-way-up a img {
+        width: 22.5px;
+        height: 22.5px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    main aside#quote-contact .container-quote .quote-words {
+        right: 7%;
+        top: -18%;
+    }
+
+    main aside#quote-contact .container-quote .quote-words blockquote { font-size: 1.65rem; }
+
+    main aside#quote-contact .container-quote .quote-words i { font-size: 1.6rem; }
+}
+
+@media screen and (max-width: 376px) {
+    main #content .introduction .profile-picture img {
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+
+    main #content .introduction .button-to-below { left: 40%; }
+
+    main aside#quote-contact .container-quote .quote-words {
+        right: 7%;
+        top: -20%;
+    }
+
+    main aside#quote-contact .container-quote .quote-words blockquote { font-size: 1.55rem; }
+
+    main aside#quote-contact .container-quote .quote-words i { font-size: 1.5rem; }
+
+    main aside#quote-contact .container-contact .below .label {
+        font-size: 11px;
+        flex: 1.25;
+    }
+
+    main aside#quote-contact .container-contact .below { gap: 1.5rem; }
+
+    main aside#quote-contact .container-contact .below .input {
+        width: 15%;
+        flex: 2.75;
+    }
+
+    .javascript { font-size: 11px; }
+
+    .go { font-size: 11px; }
+
+    footer .all-the-way-up { 
+        bottom: 120%;
+        left: 10% 
+    }
+
+    footer .socials li a { font-size: 1.5rem; }
+
+    footer p { font-size: 0.9rem; }
+    
+    footer .socials ul {
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    main #content .introduction .profile-picture img {
+        width: 250px;
+        margin-bottom: 3rem;
+    }
+
+    main aside#quote-contact .container-quote .quote-words {
+        right: 7%;
+        top: -23%;
+    }
+
+    main aside#quote-contact .container-quote .quote-words blockquote { font-size: 1.45rem; }
+
+    main aside#quote-contact .container-quote .quote-words i { font-size: 1.4rem; }
+}
